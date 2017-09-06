@@ -96,5 +96,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "author": "ag_dubs"
 }
