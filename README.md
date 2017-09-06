@@ -14,5 +14,8 @@
 构建      | webpack
 
 ### 工作流
+![npm web](https://github.com/mtshen/weixin/blob/master/docs/workflow.png)
+
+### 目录结构
 
 ### 待续...
