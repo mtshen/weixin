@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+# 微信客户端项目
+[![npm back](https://img.shields.io/badge/后端-nodeJS-green.svg)](https://github.com/mtshen/weixin)
+[![npm web](https://img.shields.io/badge/前端-react-blue.svg)](https://github.com/mtshen/weixin)
 
-You can use the [editor on GitHub](https://github.com/mtshen/weixin/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+------------------------------
+### 技术选型
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+后端      | nodeJS
+-----    |-----
+数据库    | monggoDB
+前端框架  | react
+封装      | electron
+构建      | webpack
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mtshen/weixin/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# 待续
