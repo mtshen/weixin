@@ -7,8 +7,8 @@
 /coverage
 
 # production
-/build/conf.json
-/src/conf.json
+/build/data/conf.json
+/src/data/conf.json
 
 # misc
 .DS_Store

@@ -16,21 +16,6 @@
 ### 工作流
 ![npm web](https://github.com/mtshen/weixin/blob/master/docs/workflow.png)
 
-### 目录结构
-|--- config         react脚手架文件
-|--- docs           一些资料文件或测试文件
-|--- node_modules   node插件
-|--- scripts        react脚手架文件
-|--- src            源文件目录
-|--- build          编译后的文件位置
-|--- node           后台文件位置
-|-- _config.yml     react脚手架文件
-|-- .gitignore      git忽略文件
-|-- LICENSE         MIT协议
-|-- tsconfig.json   typescript编译配置
-|-- tsconfig.text.json   typescript编译配置
-|-- tslint.json     typescript检查配置
-
 ###### 前端代码结构
 |--- src            源文件目录
 |  --- images       图片资源
