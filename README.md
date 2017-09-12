@@ -36,6 +36,24 @@ V V V V V V V V V V V V V V V V V V
 |  --- images   压缩后的图片资源
 |  --- data     其他资源, 如json或font字体
 
+###### 单页编译逻辑
+| --- scanIndex                 扫码页
+|   --- index.html              扫码页模板, 没有模板会自动创建一个空模板
+|   --- index.{tsx|jsx|ts|js}   扫码页入口文件
+|   --- components              扫码页组件
+|   --- public                  扫码页使用的第三方库或是其他非组件代码
+
+ | | | | | | | | | | | | |
+ v v v v v v v v v v v v v 
+
+| --- js
+|   --- scanIndex
+|       --- index.[hash:8].js   扫码页代码
+| --- css
+|   --- scanIndex
+|       --- index.[hash:8].css  扫码页样式
+| --- html
+|   --- scanIndex.html          扫码页html
 ###### 后端代码结构
 |--- node
 |  ---

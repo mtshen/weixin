@@ -6,6 +6,6 @@ import './index.less';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root') as HTMLElement
+  document.body as HTMLElement
 );
 registerServiceWorker();

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test index</title>
+</head>
+<body>
+    <h3>编译完成的页面:</h3>
+    <h5>重新编译后需要重新执行npm run test</h5>
+    <ul><% for (var i = 0; i < htmlWebpackPlugin.options.$tpl.length; i ++) { %>
+        <li><%= htmlWebpackPlugin.options.$tpl[i] %></li><% } %>
+    </ul>
+</body>
+</html>

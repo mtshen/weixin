@@ -47,6 +47,7 @@ const extractTextPluginOptions = shouldUseRelativeAssetPaths
 
 let HtmlWebpackPlugins = [];
 let entry = {};
+let htmlIndexArr = [];
 function readdirsSync(pathName, callback, middle = pathName, z = 0) {
   let numberThis = Number(this);
   if (numberThis && z >= numberThis) return;
@@ -76,9 +77,11 @@ readdirsSync.call(2, paths.appSrc, function ({ srcFileName, fileName, middlePath
     let seps = middlePath.replace(path.sep, '');
     if (['public', 'shared'].indexOf(seps) !== -1) return;
     entry[chunkName] = [srcFileName];
+    let templateUrl = srcFileName.split('.').slice(0, -1).join('.') + '.html';
+    let tempStat = fs.existsSync(templateUrl);
     var htmlWebpackPlugin = new HtmlWebpackPlugin({
       inject: true,
-      template: path.join(__dirname, 'webpack.html'),
+      template: tempStat ? templateUrl : path.join(__dirname, 'webpack.html'),
       hash: true,
       minify: {
         removeComments: true,
@@ -95,12 +98,22 @@ readdirsSync.call(2, paths.appSrc, function ({ srcFileName, fileName, middlePath
       chunks: [chunkName],
       filename: path.join(paths.appBuild, '/html/', middlePath + '.html')
     })
-
+    htmlIndexArr.push(path.join('/html/', middlePath + '.html'));
     HtmlWebpackPlugins.push(htmlWebpackPlugin);
 
   }
 });
 
+HtmlWebpackPlugins.push(new HtmlWebpackPlugin({
+  inject: true,
+  template: path.join(__dirname, 'index.html'),
+  $tpl: htmlIndexArr.map((text) => {
+    text = text.replace(/\\/g, "/");
+    return `<a href='${text}'>${text}</a>`;
+  }),
+  chunks: [],
+  filename: path.join(paths.appBuild, 'index.html')
+}));
 
 // This is the production configuration.
 // It compiles slowly and is focused on producing a fast and minimal bundle.
