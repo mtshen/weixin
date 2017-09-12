@@ -17,43 +17,11 @@
 ![npm web](https://github.com/mtshen/weixin/blob/master/docs/workflow.png)
 
 ###### 前端代码结构
-|--- src            源文件目录
-|  --- images       图片资源
-|  --- data         其他资源, 如json或font字体
-|  --- shared           公共组件位置,包含所有公共组件
-|  --- public           公共的非组件库, 包含一些与后台交互的代码
-|  --- scanIndex        扫码页
-|     --- components        扫码页组件
-|     --- public            扫码页非组件
-
-| | | | | | | | | | | | | | | | | |
-V V V V V V V V V V V V V V V V V V
-
-|--- build
-|  --- html     编译后的html
-|  --- css      编译后的css
-|  --- js       编译后的js
-|  --- images   压缩后的图片资源
-|  --- data     其他资源, 如json或font字体
+![npm web](https://github.com/mtshen/weixin/blob/master/docs/biany1.png)
 
 ###### 单页编译逻辑
-| --- scanIndex                 扫码页
-|   --- index.html              扫码页模板, 没有模板会自动创建一个空模板
-|   --- index.{tsx|jsx|ts|js}   扫码页入口文件
-|   --- components              扫码页组件
-|   --- public                  扫码页使用的第三方库或是其他非组件代码
+![npm web](https://github.com/mtshen/weixin/blob/master/docs/biany2.png)
 
- | | | | | | | | | | | | |
- v v v v v v v v v v v v v 
-
-| --- js
-|   --- scanIndex
-|       --- index.[hash:8].js   扫码页代码
-| --- css
-|   --- scanIndex
-|       --- index.[hash:8].css  扫码页样式
-| --- html
-|   --- scanIndex.html          扫码页html
 ###### 后端代码结构
 |--- node
 |  ---
