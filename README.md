@@ -23,6 +23,7 @@
 ![npm web](https://github.com/mtshen/weixin/blob/master/docs/biany2.png)
 
 ###### 后端代码结构
-|--- node
-|  ---
+|--- election
+|  ---  API :与前端交互接口
+|  ---  
 ### 待续...
