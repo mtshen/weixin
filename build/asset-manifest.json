@@ -1,8 +1,6 @@
 {
-  "data\\logo.svg": "data/logo.5d5d9eef.svg",
-  "images\\cs.jpg": "images/cs.e426adac.jpg",
-  "scanIndex/index.css": "css/scanIndex/index.832d428a.css",
-  "scanIndex/index.css.map": "css/scanIndex/index.832d428a.css.map",
-  "scanIndex/index.js": "js/scanIndex/index.00039abf.js",
-  "scanIndex/index.js.map": "js/scanIndex/index.00039abf.js.map"
+  "demo/index.css": "css/demo/index.d41d8cd9.css",
+  "demo/index.css.map": "css/demo/index.d41d8cd9.css.map",
+  "demo/index.js": "js/demo/index.3692b1cb.js",
+  "demo/index.js.map": "js/demo/index.3692b1cb.js.map"
 }
