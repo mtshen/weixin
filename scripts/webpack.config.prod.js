@@ -75,7 +75,7 @@ readdirsSync.call(2, paths.appSrc, function ({ srcFileName, fileName, middlePath
   if (/^index.(js|jsx|ts|tsx)$/.test(fileName)) {
     let chunkName = getChunks(fileName, middlePath);
     let seps = middlePath.replace(path.sep, '');
-    if (['public', 'shared'].indexOf(seps) !== -1) return;
+    if (['public', 'shared', 'images', 'data'].indexOf(seps) !== -1) return;
     entry[chunkName] = [srcFileName];
     let templateUrl = srcFileName.split('.').slice(0, -1).join('.') + '.html';
     let tempStat = fs.existsSync(templateUrl);
