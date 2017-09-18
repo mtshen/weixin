@@ -8,13 +8,19 @@ ReactDOM.render(
 );
 var color = {
     color: 'red'
+};
+
+interface HelloProps {
+    name: string;
 }
-var HelloMessage = React.createClass({
-    render: function() {
-        return <h1 style={color}>Hello {this.props.name}!</h1>
+
+class HelloMessage extends React.Component<HelloProps, {}> {
+    render() {
+        return<h1 style={color}>Hello {this.props.name}!</h1>;
     }
-});
+}
+
 ReactDOM.render(
-    <HelloMessage name="zhxj"/>,
+    <HelloMessage name="zhxj" />,
     document.getElementById('com')
 );

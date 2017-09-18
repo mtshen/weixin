@@ -1,6 +1,10 @@
 {
   "demo/index.css": "css/demo/index.d41d8cd9.css",
   "demo/index.css.map": "css/demo/index.d41d8cd9.css.map",
-  "demo/index.js": "js/demo/index.3692b1cb.js",
-  "demo/index.js.map": "js/demo/index.3692b1cb.js.map"
+  "demo/index.js": "js/demo/index.392067ec.js",
+  "demo/index.js.map": "js/demo/index.392067ec.js.map",
+  "scanIndex/index.css": "css/scanIndex/index.65027555.css",
+  "scanIndex/index.css.map": "css/scanIndex/index.65027555.css.map",
+  "scanIndex/index.js": "js/scanIndex/index.db7da132.js",
+  "scanIndex/index.js.map": "js/scanIndex/index.db7da132.js.map"
 }
