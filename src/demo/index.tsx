@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React,{ReactTypes} from 'react';
 import * as ReactDOM from 'react-dom';
 import './index.less';
 
@@ -6,15 +6,28 @@ ReactDOM.render(
     <h1>hello world! </h1>,
     document.getElementById('root')
 );
-var color = {
+const color = {
     color: 'red'
 }
-var HelloMessage = React.createClass({
+const HelloMessage = React.createClass({
     render: function() {
         return <h1 style={color}>Hello {this.props.name}!</h1>
     }
 });
 ReactDOM.render(
-    <HelloMessage name="zhxj"/>,
+    <HelloMessage myname="zhxj"/>,
     document.getElementById('com')
 );
+// interface Props {
+//     foo: string;
+//   }
+  
+// class MyComponent extends React.Component<Props, {}> {
+//     render() {
+//         return <span>{this.props.foo}</span>
+//     }
+// }
+// ReactDOM.render(
+//     <MyComponent foo="zhxj"/>,
+//     document.getElementById('com')
+// );
