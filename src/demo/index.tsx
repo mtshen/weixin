@@ -24,16 +24,4 @@ ReactDOM.render(
     <HelloMessage name="zhxj" />,
     document.getElementById('com')
 );
-// interface Props {
-//     foo: string;
-//   }
-  
-// class MyComponent extends React.Component<Props, {}> {
-//     render() {
-//         return <span>{this.props.foo}</span>
-//     }
-// }
-// ReactDOM.render(
-//     <MyComponent foo="zhxj"/>,
-//     document.getElementById('com')
-// );
+
