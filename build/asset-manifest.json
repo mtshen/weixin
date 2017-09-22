@@ -1,10 +1,10 @@
 {
-  "demo/index.css": "css/demo/index.d41d8cd9.css",
-  "demo/index.css.map": "css/demo/index.d41d8cd9.css.map",
-  "demo/index.js": "js/demo/index.28d639c8.js",
-  "demo/index.js.map": "js/demo/index.28d639c8.js.map",
+  "login/index.css": "css/login/index.e32f9b77.css",
+  "login/index.css.map": "css/login/index.e32f9b77.css.map",
+  "login/index.js": "js/login/index.fd916a6b.js",
+  "login/index.js.map": "js/login/index.fd916a6b.js.map",
   "scanIndex/index.css": "css/scanIndex/index.65027555.css",
   "scanIndex/index.css.map": "css/scanIndex/index.65027555.css.map",
-  "scanIndex/index.js": "js/scanIndex/index.22567937.js",
-  "scanIndex/index.js.map": "js/scanIndex/index.22567937.js.map"
+  "scanIndex/index.js": "js/scanIndex/index.714e1e80.js",
+  "scanIndex/index.js.map": "js/scanIndex/index.714e1e80.js.map"
 }
